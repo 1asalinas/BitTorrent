@@ -3,9 +3,7 @@ function TorrentFile(){
 
 //first function
 function numberOfPacket(fileSize){
-    let packets = fileSize * 20;
-    return packets;
-
+   return fileSize / 50;
 }
 
 
@@ -15,8 +13,9 @@ function buildTorrentPacketArray(numOfPackets){
     let list = [];
     let length;
     for(let i = 0 ; i < length; i++){
-        
+        list [i] = 1; 
     }
+    return list
 
 }
 
@@ -24,4 +23,4 @@ function buildTorrentPacketArray(numOfPackets){
 
 }
 
-//main test methods
+//main test method
