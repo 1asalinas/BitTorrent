@@ -5,15 +5,26 @@ function Tracker(){
   let percent = [];
 
   //implement all six functions below
-  function numOfSeeds(){
+  function numOfSeeds(list){
+    let result = 0;
+    for (let i = 0; i <= list.length; i++){
+      if(list[i]!== null){
+        result++
+      }
 
+    } 
   }
 
-  function addSeed(){
-
+  function addSeed(name){
+    seeds.push(name)
   }
 
-  function removeSeed(){
+  function removeSeed(seeds,name){
+    let index;
+    for(let i = 0; i < list.length; i++){
+      if(seed[i]=== name);
+      
+    }
 
   }
 
