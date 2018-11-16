@@ -20,20 +20,30 @@ function Tracker(){
   }
 
   function removeSeed(seeds,name){
-    let index;
-    for(let i = 0; i < list.length; i++){
-      if(seed[i]=== name);
+    for(let i = 0; i < seeds.length; i++){
+      if(seeds[i]=== name);
+      return seeds = [null];
       
     }
 
   }
 
-  function reportHealth(){
-
+  function reportHealth(list){
+    let sum = 0;
+    for(let i =0; i < list.length; i++){
+      sum = sum + seeds[i];
+    }
+    return sum / list.length
   }
 
   function update(){
-  
+  for (i = 0; i < seeds.length; i++){
+    let r = Math.random()
+    if(percent[i]){
+
+    }
+    else if
+  }
 
   }
 }
