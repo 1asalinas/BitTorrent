@@ -5,10 +5,10 @@ function Tracker(){
   let percent = [];
 
   //implement all five functions below
-  function numOfSeeds(list){
+  function numOfSeeds(){
     let result = 0;
-    for (let i = 0; i <= list.length; i++){
-      if(list[i] !== null){
+    for (let i = 0; i <= seeds.length; i++){
+      if(seeds[i] !== null){
         result++
       }
 
@@ -19,7 +19,7 @@ function Tracker(){
     seeds.push(name)
   }
 
-  function removeSeed(seeds,name){
+  function removeSeed(name){
     for(let i = 0; i < seeds.length; i++){
       if(seeds[i] === name);
       return seeds = [null];
@@ -28,12 +28,16 @@ function Tracker(){
 
   }
 
-  function reportHealth(list){
+  function reportHealth(){
     let sum = 0;
-    for(let i = 0; i < list.length; i++){
-      sum = sum + seeds[i];
+    let count = 0;
+    for(let i = 0; i < percent.length; i++){
+      if(percent[i] !== 0){
+        sum = sum + percent[i];
+        count++;
+      }
     }
-    return sum / list.length
+    return sum / count;
   }
 
   function update(){
