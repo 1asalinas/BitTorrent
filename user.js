@@ -13,23 +13,28 @@ function User(tracker, torrent){
   }
 
   function updateTracker(){
+    function tracker(){
 
+    }
   }
 
   function checkProgress(){
-
+    let sum = 0;< percent.length; i++){
+      sum = sum + percent[i];
+    }
+    return sum/ percent.length;
   }
 
   function leech(){
-
+    uploadSpeed = 0;
+    downloadSpeed = Math.random();
   }
 
   function seed(){
+    uploadSpeed = Math.random() * 10;
+    downloadSpeed = Math.random() * 25;
 
   }
-
-
-  //Type all of your code in here.
 
 
 
