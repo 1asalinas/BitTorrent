@@ -4,8 +4,8 @@ function User(tracker, torrent){
   let myTracker = tracker;
   let myTorrent = torrent;
   let state = "seed" || "leech";
-  let downloadSpeed = Math.random * 25;
-  let uploadSpeed = Math.random * 10;
+  let downloadSpeed = 0;
+  let uploadSpeed =  0;
 
 
   function startDownload(){
@@ -13,16 +13,12 @@ function User(tracker, torrent){
   }
 
   function updateTracker(){
-    function tracker(){
-
-    }
+     myTracker.update();
   }
 
+
   function checkProgress(){
-    let sum = 0;< percent.length; i++){
-      sum = sum + percent[i];
-    }
-    return sum/ percent.length;
+    myTorrent.reportHealth();
   }
 
   function leech(){

@@ -6,8 +6,6 @@ function numberOfPacket(fileSize){
    return fileSize / 50;
 }
 
-
-
 //second function
 function buildTorrentPacketArray(numOfPackets){
     let list = [];
